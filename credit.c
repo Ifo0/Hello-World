@@ -8,14 +8,15 @@ int main(void)
     
     //You can experiment with this value for an input : 378282246310005
     
-    long long card;
+    
     
     //The size of 6 is arbitrary. I have not figured out how to make it dynamic yet, so i had to do with a static input
     //If you have any suggestions on how to get the lenght of a long long variable, please share!
-    double temp[6];
+    long long card, cc1;
+    int temp[6];
     int counter;
     int c = 0;
-
+    
     do
     {
         card = get_long_long("Provide credit card number: ");
@@ -32,7 +33,7 @@ int main(void)
     //Here I am printing out the result. As you will see, it is quite weird
     while (c < counter)
     {
-        printf("%i", temp[c]);
+        printf("%i\n", temp[c]);
         c++;
     }
 

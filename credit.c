@@ -38,3 +38,35 @@ int main(void)
     }
 
 }
+
+//The solution to the problem that was suggested to me was to increase the size of the 'temp' array and to initialize
+//it before I start adding elements to it. Code that properly stores is bellow
+
+int main(void)
+{
+    //
+    long long card, cc1;
+    int temp[10] = {0};
+    int counter;
+    int c = 0;
+
+    do
+    {
+        card = get_long_long("Provide credit card number: ");
+    }
+    while(card < 0);
+
+
+    for (counter = 0, cc1 = card / 10 ; cc1 >= 1; cc1 /= 100 )
+    {
+        temp[counter] += (cc1 % 10) * 2;
+        counter++;
+    }
+
+    while (c < counter)
+    {
+        printf("%i\n", temp[c]);
+        c++;
+    }
+
+}

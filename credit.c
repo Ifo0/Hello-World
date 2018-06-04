@@ -8,7 +8,7 @@ int main(void)
     
     //You can experiment with this value for an input : 378282246310005
     
-    long long card, cc1, cc2;
+    long long card;
     
     //The size of 6 is arbitrary. I have not figured out how to make it dynamic yet, so i had to do with a static input
     //If you have any suggestions on how to get the lenght of a long long variable, please share!
